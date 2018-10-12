@@ -1,0 +1,83 @@
+html, body {
+    margin : 0;
+    padding : 0;
+    height : 100%;
+    width: 100%;
+    font-family: "Whitney SSm A", "Whitney SSm B", "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    font-weight: 400;
+    line-height: 1.5;
+}    
+    
+body {
+    background-color: powderblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+body > * { /* every body element */
+    /* outline: 1px solid fuchsia; */
+}
+
+.inspirationalTiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.fortuneTile, .quoteTile, .picTile {
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    /* font-family: arial, sans-serif; */
+    /* font-size: 12px; */
+    height: 223px;
+    line-height: 100%;
+    margin: 0 8px;
+    /* opacity: 1; */
+    /* overflow: hidden; */
+    position: relative;
+    vertical-align: top;
+    /* white-space: nowrap; */
+    flex-grow: 1;
+    background: linear-gradient(rgba(156,39,176,0.2), white);
+    /* outline: 1px solid fuchsia; */
+}
+
+/* .fortuneTile {
+    display: inline-block;
+    outline: 1px solid fuchsia
+}
+
+.quoteTile {
+    display: inline-block;
+    outline: 1px solid fuchsia */
+    
+button {
+    font-size: 100%;
+}
+
+.buttonContainer {
+    /* font-size: 24px; */
+    text-align: center;
+    /* outline: 1px solid fuchsia  */
+    }
+    
+    
+.quoteDisplay { 
+    /* height: 200px; */
+    /* flex-wrap: 1; */
+    font-size: 150%;
+    text-align: center;
+    line-height: 1.5;
+    /* outline: 1px solid black;  */
+    display: flex;
+}
+
+img {
+    height: 200px;
+    width: auto;
+    display: inline-block;
+}

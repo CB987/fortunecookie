@@ -5,13 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fortune Cookie</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
 </head>
 <body>
-    <h1>Fortune Cookie</h1>
-    <div class = "quoteDisplay" data-output>
-        <!-- This is where the quote will be displayed.  -->
-    </div> 
-    <button data-trigger>Click here for another fortune!</button>
+    <h1>Choose Your Inspiration:</h1>
+    <div class="inspirationalTiles">
+        <div class="fortuneTile">
+            <div class="buttonContainer">
+                <button data-trigger-fortune>Fortune Cookie</button>
+            </div>
+            <div class = "quoteDisplay"> <p data-output-fortune></p>
+            </div> 
+        </div> 
+        
+        <div class="quoteTile">
+            <div class="buttonContainer">
+                <button data-trigger-quote>Best Movie Quotes Ever</button>
+            </div>
+            <div class = "quoteDisplay">
+                <img data-output-movie-pic>    
+                <p data-output-quote></p>
+            </div>
+        </div>
+
+        <div class="picTile">
+            <div class="buttonContainer">
+                <button data-trigger-pic>Motivational Pics</button>
+            </div>
+            <div class = "quoteDisplay"> 
+                <img data-output-pic> 
+                <p data-output-caption></p>
+            </div>
+        </div>
+    </div>
+    <!-- other button ideas:
+    song lyrics
+    .gifs 
+    memes
+    bad jokes/ puns
+    deep thoughts by jack handy -->
+
     <script src ="scripts/index.js"></script>
 </body>
 </html>
